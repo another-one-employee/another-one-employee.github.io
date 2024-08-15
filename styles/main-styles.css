@@ -6,7 +6,7 @@ html, body {
     overflow: hidden;
 }
 body {
-    cursor: url("res/cursor.png"), auto;
+    cursor: url("../assets/images/cursor.png"), auto;
     font-family: 'Monocraft', sans-serif;
     color: #e187ea;
     font-size: 20px;
@@ -23,7 +23,7 @@ footer {
 /*Text*/
 @font-face {
     font-family: 'Monocraft';
-    src: url('res/Monocraft.otf') format('opentype');
+    src: url('../assets/fonts/Monocraft.otf') format('opentype');
 }
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
@@ -75,7 +75,7 @@ a:visited {
 body {
     margin: 0;
     padding: 0;
-    background-image: url('res/background.gif');
+    background-image: url('../assets/images/background.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
