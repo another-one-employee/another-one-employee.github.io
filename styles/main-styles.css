@@ -1,4 +1,4 @@
-/*Main*/
+/* Main */
 html, body {
     margin: 0;
     padding: 0;
@@ -11,16 +11,56 @@ body {
     color: #e187ea;
     font-size: 20px;
 }
+header {
+    padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+}
+nav ul li {
+    margin: 0 13px;
+}
+nav ul li a {
+    color: #e187ea;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #e187ea;
+    transition: border-color 0.3s;
+}
+nav ul li a:hover {
+    border-color: #e187ea;
+}
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     margin-bottom: 0%;
     text-align: center;
+    font-size: 16px;
+}
+
+/* Lists */
+.custom-list {
+    padding-left: 10%;
+    font-size: 16px;
+    text-align: left;
+}
+  
+.custom-list li {
+    margin-bottom: 18px;
+}
+
+.custom-list li a{
+    color: antiquewhite;
 }
   
 
-/*Text*/
+/* Text */
 @font-face {
     font-family: 'Monocraft';
     src: url('../assets/fonts/Monocraft.otf') format('opentype');
@@ -35,38 +75,30 @@ footer {
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
-/*Links*/
+/* Links */
 a:link {
     color: #e187ea;
 }
 a:visited {
-    color: #e258b7;
+    color: #e187ea;
 }
 #linkAsPicture {
     width: 48px;
     height: 48px;
 }
 
-/*Layout*/
-#leftSidebar{
-    float: left;
-    width: 150px;
-}
-#rightSidebar{
-    float: right;
-    width: 150px;
-}
+/* Layout */
 #mainText {
     text-align: center;
-    margin-top: 13%;
+    margin-top: 11%;
 }
 
-/*Images*/
+/* Images */
 .profile-picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 11%;
+    margin-top: 9%;
     width: 150px;
     height: 150px;
     border: 3px solid #e187ea;
@@ -81,4 +113,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
+}
+#imageWithBorder {
+    border: 4px solid #e187ea;
 }
