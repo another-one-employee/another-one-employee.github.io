@@ -1,40 +1,8 @@
-/* Main */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-}
 body {
-    cursor: url("../assets/images/cursor.png"), auto;
-    font-family: 'Monocraft', sans-serif;
-    color: #e187ea;
-    font-size: 20px;
+    color: #aa776c;
+    background-color: #f4f4f4;
 }
-header {
-    padding: 10px 0;
-}
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 10px;
-    font-size: 16px;
-}
-nav ul li {
-    margin: 0 13px;
-}
-nav ul li a {
-    color: #e187ea;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid #e187ea;
-    transition: border-color 0.3s;
-}
-nav ul li a:hover {
-    border-color: #e187ea;
-}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -42,78 +10,89 @@ footer {
     margin-bottom: 0%;
     text-align: center;
     font-size: 16px;
+    text-decoration: none;
+    
 }
 
-/* Lists */
-.custom-list {
-    padding-left: 10%;
-    font-size: 16px;
-    text-align: left;
-}
-  
-.custom-list li {
-    margin-bottom: 18px;
+/* Sidebars */
+#leftSidebar {
+    float: left;
+    margin-left: 100px;
+    margin-top: 40px;
 }
 
-.custom-list li a{
-    color: antiquewhite;
-}
-  
-
-/* Text */
-@font-face {
-    font-family: 'Monocraft';
-    src: url('../assets/fonts/Monocraft.otf') format('opentype');
-}
-.noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
+#rightSidebar {
+    float: right;
+    margin-right: 150px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 25px;
 }
 
 /* Links */
-a:link {
-    color: #e187ea;
-}
-a:visited {
-    color: #e187ea;
-}
-#linkAsPicture {
-    width: 48px;
-    height: 48px;
+.profile-link-block {
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    height: 70px;
+    align-items: stretch;
 }
 
-/* Layout */
-#mainText {
-    text-align: center;
-    margin-top: 11%;
+.profile-link-block:nth-child(5),
+.profile-link-block:nth-child(6) {
+    grid-column: span 2;
+    grid-row: span 2;
+    align-items: stretch;
+}
+
+.profile-link-block a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    color: #333;
+    height: 100%;
+}
+
+.profile-link-block a span {
+    margin-top: 1.2em;
+    margin-top: 3px;
+}
+
+.profile-link-block a span:last-child {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 3px;
 }
 
 /* Images */
-.profile-picture {
+.profile-image {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 9%;
-    width: 150px;
-    height: 150px;
-    border: 3px solid #e187ea;
+    width: 175px;
+    height: 175px;
+    border: 3px solid #aa7f75;
     border-radius: 50%;
 }
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url('../assets/images/background.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
+
+.profile-link-block a .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
 }
-#imageWithBorder {
-    border: 4px solid #e187ea;
+
+/* Github Commit History  */
+.github-chart-container {
+    position: relative;
+    width: 100%;
+    height: 120%;
+}
+
+.github-chart {
+    width: 100%;
+    height: 105%;
+    object-fit: contain;
+    position: relative;
 }
